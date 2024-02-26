@@ -1,0 +1,91 @@
+@mixin font {
+    font-size: 16px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.main {
+    margin-top: 20px;
+    padding: 70px 150px;
+    background-color: #F6F6F6;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.main-wrapper {
+    display: flex;
+    gap: 50px;
+    .main-title {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        h3 {
+            @include font;
+            font-weight: 550;
+            font-size: 22px;
+            line-height: 24px;
+        }
+        p {
+            @include font;
+            line-height: 22px;
+            font-size: 18px;
+        }
+        .main-button {
+            display: flex;
+            gap: 20px;
+            align-content: center;
+            button {
+                border: none;
+                background-color: #FFCC33;
+                padding: 12px 24px;
+                border-radius: 8px;
+                @include font;
+            }
+        }
+        .main-svg {
+            padding: 10px 5px;
+            @include font;
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+    .main-date {
+        @include font;
+        width: 1200px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    h4 {
+        text-transform: uppercase;
+        color: #1B140066;
+        margin-bottom: -10px;
+    }
+    p {
+        color: #000;
+        font-weight: 550
+    }
+}
+.main-buttons button{
+    @include font;
+    border: none;
+    padding: 8px;
+    margin-right: 8px;
+    border-radius: 4px 8px;
+    font-size: 14px;
+}
+.main-numbers {
+    padding: 50px 0 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    button {
+        background-color: #EAEAEA;
+        padding: 10px;
+        @include font;
+        border: none;
+        border-radius: 5px;
+    }
+}

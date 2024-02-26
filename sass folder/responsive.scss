@@ -32,6 +32,9 @@
             margin-right: 5px;
         }
     }
+    .main {
+        padding: 70px 100px;
+    }
 }
 @media (max-width: 1150px) {
     .second-header__wrapper {
@@ -63,6 +66,12 @@
     }
     .second-container {
         padding: 0 50px;
+    }
+    .main {
+        padding: 70px 50px;
+    }
+    .main-wrapper {
+        flex-wrap: wrap;
     }
 }
 @media (max-width:600px) {
@@ -114,5 +123,7 @@
             @include font;
         }
     }
-    
+    .main {
+        padding: 70px 30px;
+    }
 }

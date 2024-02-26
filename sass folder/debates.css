@@ -134,6 +134,111 @@ section {
   padding-right: 5px;
 }
 
+.main {
+  margin-top: 20px;
+  padding: 70px 150px;
+  background-color: #F6F6F6;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main-wrapper {
+  display: flex;
+  gap: 50px;
+}
+.main-wrapper .main-title {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+.main-wrapper .main-title h3 {
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  font-weight: 550;
+  font-size: 22px;
+  line-height: 24px;
+}
+.main-wrapper .main-title p {
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  line-height: 22px;
+  font-size: 18px;
+}
+.main-wrapper .main-title .main-button {
+  display: flex;
+  gap: 20px;
+  align-content: center;
+}
+.main-wrapper .main-title .main-button button {
+  border: none;
+  background-color: #FFCC33;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.main-wrapper .main-title .main-svg {
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.main-wrapper .main-title .main-svg span {
+  font-size: 18px;
+}
+.main-wrapper .main-date {
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  width: 1200px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+.main-wrapper h4 {
+  text-transform: uppercase;
+  color: rgba(27, 20, 0, 0.4);
+  margin-bottom: -10px;
+}
+.main-wrapper p {
+  color: #000;
+  font-weight: 550;
+}
+
+.main-buttons button {
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  border: none;
+  padding: 8px;
+  margin-right: 8px;
+  border-radius: 4px 8px;
+  font-size: 14px;
+}
+
+.main-numbers {
+  padding: 50px 0 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.main-numbers button {
+  background-color: #EAEAEA;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  border: none;
+  border-radius: 5px;
+}
+
 @media (max-width: 1275px) {
   header {
     margin: 0;
@@ -160,6 +265,9 @@ section {
   .second-header__wrapper button {
     padding: 5px 10px;
     margin-right: 5px;
+  }
+  .main {
+    padding: 70px 100px;
   }
 }
 @media (max-width: 1150px) {
@@ -192,6 +300,12 @@ section {
   }
   .second-container {
     padding: 0 50px;
+  }
+  .main {
+    padding: 70px 50px;
+  }
+  .main-wrapper {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 600px) {
@@ -245,6 +359,9 @@ section {
     font-size: 14px;
     font-weight: 500;
     vertical-align: middle;
+  }
+  .main {
+    padding: 70px 30px;
   }
 }
 
