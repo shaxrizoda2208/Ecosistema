@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  margin-right: 150px;
+  padding: 10px 150px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.03);
+  position: fixed;
+}
+
+.header-container {
+  margin-right: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0;
+  padding: 0;
+}
+
+.header-wrapper div {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 30px;
+}
+.header-wrapper div a {
+  text-decoration: none;
+  color: #1B1400;
+  border-left: 1px solid lightgray;
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.header-bars {
+  display: none;
+}
+
+.header-title {
+  padding: 0;
+}
+.header-title ul {
+  text-decoration: none;
+  display: flex;
+  gap: 30px;
+}
+.header-title ul li {
+  list-style: none;
+}
+.header-title ul li a {
+  text-decoration: none;
+  color: rgb(27, 20, 0);
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.header-title ul li button {
+  padding: 8px 16px 8px 16px;
+  border-radius: 8px;
+  background-color: rgb(255, 204, 51);
+  border: none;
+  margin-top: -5px;
+  display: flex;
+  align-content: center;
+  gap: 8px;
+}
+.header-title ul li button span {
+  margin-top: 3px;
+}
+
+section {
+  padding-top: 105px;
+}
+
+.second-header {
+  padding: 0 150px 20px;
+  border-bottom: 0.5px solid rgba(196, 196, 196, 0.6);
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 10px;
+}
+.second-header a {
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  font-size: 14px;
+  color: rgba(27, 20, 0, 0.4);
+}
+
+.second-container {
+  padding: 0 150px;
+}
+.second-container h1 {
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  font-size: 40px;
+  color: #000000;
+}
+.second-container p {
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  font-size: 18px;
+  color: #6e6d6d;
+  margin-top: -15px;
+  line-height: 22px;
+}
+
+.second-header__wrapper {
+  padding: 5px 150px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2px;
+  justify-content: space-between;
+}
+.second-header__wrapper button {
+  font-size: 16px;
+  font-weight: 500;
+  vertical-align: middle;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-right: 5px;
+}
+.second-header__wrapper button span:nth-child(1) {
+  padding-right: 5px;
+}
+
+@media (max-width: 1275px) {
+  header {
+    margin: 0;
+    padding: 10px 100px 10px;
+  }
+  .header-container {
+    margin-right: 200px;
+  }
+  .header-wrapper div a {
+    padding: 18px;
+  }
+  section {
+    padding-top: 105px;
+  }
+  .second-header {
+    padding: 0 100px 20px;
+  }
+  .second-container {
+    padding: 0 100px;
+  }
+  .second-header__wrapper {
+    padding: 5px 100px;
+  }
+  .second-header__wrapper button {
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 1150px) {
+  .second-header__wrapper {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    margin: 0;
+    padding: 10px 50px 10px;
+  }
+  .header-container {
+    margin-right: 100px;
+  }
+  .header-wrapper div {
+    gap: 15px;
+  }
+  .header-wrapper div a {
+    padding: 18px 5px 18px;
+  }
+  .header-title ul {
+    gap: 15px;
+  }
+  section {
+    padding-top: 105px;
+  }
+  .second-header {
+    padding: 0 50px 20px;
+  }
+  .second-container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    padding: 10px 30px;
+  }
+  .header-container {
+    padding: 0;
+  }
+  .header-wrapper div {
+    gap: 15px;
+  }
+  .header-wrapper div a {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+  .header-bars {
+    display: block;
+    margin: 0;
+    padding-top: 10px;
+  }
+  .header-title {
+    display: none;
+  }
+  section {
+    padding-top: 105px;
+  }
+  .second-header {
+    padding: 0 30px 20px;
+    gap: 10px;
+  }
+  .second-header a {
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+    font-size: 14px;
+    color: rgba(27, 20, 0, 0.4);
+  }
+  .second-container {
+    padding: 0 30px;
+  }
+  .second-container h1 {
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+  .second-container p {
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+  }
+}
+
+/*# sourceMappingURL=debates.css.map */
