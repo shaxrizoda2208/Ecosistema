@@ -5,6 +5,7 @@ body{
 *{
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
     font-family: 'Arial';
     box-sizing: border-box;
 }
@@ -73,7 +74,6 @@ nav a{
 }
 .portfolio{
     display: flex;
-    height: 100vh;
     background: #ece9e999;
 }
 .portfolio__text{
@@ -81,7 +81,7 @@ nav a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 90px;
+    padding: 0 90px 0 ;
 }
 .__wrapper-title h1{
     margin-bottom: -10px;
@@ -105,7 +105,7 @@ nav a{
     gap: 10px;
 }
 .Natalya__wrapper{
-    padding: 30px 0;
+    padding: 30px 90px;
 }
 .btn__wrapper{
     margin-top: 10px;
@@ -174,7 +174,7 @@ footer{
 .footer-bootom{
     display: flex;
     justify-content: space-between;
-    padding: 0 110px;
+    padding: 0 90px;
     margin-top: 30px;
 }
 .footer-bootom p{
@@ -183,9 +183,196 @@ footer{
     opacity: 50%;
     line-height: 20px;
 }
+.bars{
+    display: none;
+}
+.about__Natalya-wrapper{
+    display: none;
+}
 @media screen and (max-width:375px) {
     .container{
         widows: 90%;
         margin: 0 auto;
+    }
+    header{
+        width: 100%;
+        padding: 0 ;
+    }
+    .logo__wrapper{
+        width: 100%;
+        padding: 10px 20px;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .header__list{
+        display: none;
+    }
+    .__wrapper-list{
+        padding: 0;
+        display: none;
+    }
+    .bars{
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    .logo__wrapper img{
+        width: 30px;
+    }
+    nav{
+        display: none;
+    }
+    .portfolio{
+        background: #fff;
+        padding: 20px 0 0 20px;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+    .portfolio__text{
+        padding: 0;
+    }
+    .__wrapper-text{
+        display: none;
+    }
+    .contact-info{
+        display: none;
+    }
+    .Natalya__wrapper{
+        padding: 0;
+    }
+    .Natalya__wrapper img{
+        width: 150px;
+    }
+    .btn__wrapper{
+        display: none;
+    }
+    .__wrapper-title h1{
+        font-size: 23px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-top: -4px;
+    }
+    .__wrapper-title p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .about__Natalya-wrapper{
+        display: block;
+        padding: 0 20px;
+    }
+    .about-text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        font-family: 'Arial';
+    }
+    .about-address h1{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: rgb(172, 171, 171);
+        font-family: 'Arial';
+    }
+    .about-address p{
+        font-family: ALS Hauss;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        font-family: 'Arial';
+    }
+    .coming-correspondence h1{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: rgb(172, 171, 171);
+    }
+    .about-address{
+        border-top: 1px solid rgb(232, 231, 231);
+        border-bottom: 1px solid rgb(232, 231, 231);
+    }
+    .coming-correspondence p{
+        font-family: ALS Hauss;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        font-family: 'Arial';
+    }
+    .about-btn-wrapper{
+        margin-top: 100px;
+        padding-top: 10px;
+        padding-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-top: 1px solid rgb(232, 231, 231);
+        border-bottom: 3px solid rgb(232, 231, 231);
+    }
+    .about-btn-wrapper button{
+        width: 100%;
+        padding: 14px 0;
+        font-size: 15px;
+    }
+    .about-btn-wrapper >.white-btn{
+        border-radius: 8px;
+        border: 1px solid rgb(194, 194, 194);
+        font-size: 15px;
+        padding: 14px 0;
+        background: #fff;
+    }
+    footer{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .footer-logo{
+        width: 100%;
+        padding: 20px 0;
+        padding-bottom: 70px;
+        flex-direction: row;
+        gap: 10px;
+        border-top: 0;
+        border-bottom: 1px solid rgb(232, 231, 231);
+    }
+    .footer-logo p{
+        width: 100%;
+    }
+    .list-wrapper{
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+    }
+    .footer-list{
+        gap: 0;
+        justify-content: flex-start;
+    }
+    .list-wrapper ul li a{
+        opacity: 50%;
+    }
+    .list-wrapper-3 ul li a{
+        opacity: 50%;
+    }
+    .list-wrapper-3{
+        border-top: 1px solid rgb(232, 231, 231);
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid rgb(232, 231, 231);
+    }
+    .footer-bootom{
+        justify-content: flex-start;
+        padding: 0 10px;
+        flex-wrap: wrap;
+    }
+    .app-img-wraaper{
+        display: flex;
+        gap: 10px;
+        padding-bottom: 30px;
     }
 }
