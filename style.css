@@ -139,7 +139,8 @@ nav{
     width: auto;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 
+    20px;
     background: rgba(255, 255, 255, 1);
     border-radius: 8px;
 }
